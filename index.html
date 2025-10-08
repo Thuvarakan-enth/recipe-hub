@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Recipe Hub — Home</title>
+  <style>
+    /* Embedded CSS so no separate file required */
+    :root{--bg:#0f1724;--card:#0b1220;--accent:#f97316;--muted:#94a3b8}
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;margin:0;background:linear-gradient(180deg,#071024 0%, #0b1220 100%);color:#e6eef8}
+    header{padding:24px 32px;background:linear-gradient(90deg,rgba(255,255,255,0.02),transparent)}
+    .container{max-width:960px;margin:28px auto;padding:16px}
+    .card{background:rgba(255,255,255,0.03);border-radius:12px;padding:18px;box-shadow:0 6px 18px rgba(2,6,23,0.6)}
+    nav a{margin-right:12px;text-decoration:none;color:var(--accent);font-weight:600}
+    h1{margin:0 0 8px 0}
+    .recipes{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;margin-top:16px}
+    .recipe-tile{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:12px;border-radius:10px}
+    footer{margin-top:22px;font-size:13px;color:var(--muted);text-align:center}
+    .btn{display:inline-block;padding:8px 12px;border-radius:8px;background:var(--accent);color:#08101b;text-decoration:none;font-weight:700}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="appetizers.html">Appetizers</a>
+        <a href="desserts.html">Desserts</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="card">
+      <h1>Recipe Hub</h1>
+      <p>Welcome — a tiny collaborative site for sharing simple recipes. Use the links above to view appetizer and dessert recipes contributed by team members.</p>
+
+      <div class="recipes">
+        <div class="recipe-tile">
+          <h3>Easy Bruschetta</h3>
+          <p style="color:#9fb1c7">Tomato, basil, garlic — on toast.</p>
+        </div>
+        <div class="recipe-tile">
+          <h3>Chocolate Mousse</h3>
+          <p style="color:#9fb1c7">Light, fluffy, and quick.</p>
+        </div>
+      </div>
+
+      <p style="margin-top:14px">
+        <a class="btn" href="appetizers.html">See appetizers</a>
+        <a class="btn" href="desserts.html" style="margin-left:8px">See desserts</a>
+      </p>
+    </div>
+
+    <footer>
+      Built for a Git & GitHub collaboration exercise.
+    </footer>
+  </main>
+</body>
+</html>
+
